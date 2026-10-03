@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/
+.env
+*.log
+
+# local-only artifacts
+dextg.tar.gz
+backups/
+*.bak-*
+*.bak

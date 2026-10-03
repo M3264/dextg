@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -v '^$')",
+      "Bash(npm run *)",
+      "Bash(curl -s \"https://api.dexscreener.com/latest/dex/tokens/0x3776beD527B79e0aF3D29097963d37C92aAaFBA3\")",
+      "Bash(python3 -c ' *)",
+      "WebSearch",
+      "WebFetch(domain:docs.uniswap.org)",
+      "WebFetch(domain:developers.uniswap.org)",
+      "Bash(curl -s \"https://api.dexscreener.com/latest/dex/tokens/0xa9d7e761588b2be0adfad592adc340e6483b96e1\")",
+      "Bash(npx tsx *)",
+      "Bash(awk '{print $2}')",
+      "Bash(xargs -r kill)",
+      "Bash(pkill -f \"tsx src/index.ts\")",
+      "Bash(npm start *)",
+      "Bash(pkill -9 -f \"tsx src/index.ts\")",
+      "Bash(curl -s --max-time 8 \"https://api.dexscreener.com/latest/dex/tokens/0x532f27101965dd16442E59d40670FaF5eBB142E4\")",
+      "Bash(awk '{print \"running, pid\", $2}')",
+      "Bash(curl -s --max-time 10 \"https://api.dexscreener.com/latest/dex/tokens/0x3a43153d038e83b24de5e603d1997041bec95ba3\")",
+      "Bash(pm2 --version)",
+      "Bash(npm install *)",
+      "Bash(./node_modules/.bin/pm2 start *)",
+      "Bash(./node_modules/.bin/pm2 logs *)",
+      "Bash(./node_modules/.bin/pm2 jlist *)",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\).on\\('end',\\(\\)=>{const a=JSON.parse\\(d\\)[0];console.log\\('status:',a.pm2_env.status,' restarts:',a.pm2_env.restart_time,' uptime\\(ms\\):',Date.now\\(\\)-a.pm2_env.pm_uptime\\)}\\)\")",
+      "Bash(./node_modules/.bin/pm2 save *)",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\).on\\('end',\\(\\)=>{const a=JSON.parse\\(d\\)[0];const e=a.pm2_env;console.log\\('status:',e.status,'| restarts:',e.restart_time,'| uptime:',Math.round\\(\\(Date.now\\(\\)-e.pm_uptime\\)/1000\\)+'s','| cpu:',a.monit.cpu+'%','| mem:',Math.round\\(a.monit.memory/1e6\\)+'mb'\\)}\\)\")",
+      "Bash(./node_modules/.bin/pm2 restart *)",
+      "Bash(./node_modules/.bin/pm2 flush *)",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\).on\\('end',\\(\\)=>{const a=JSON.parse\\(d\\)[0];const e=a.pm2_env;console.log\\('status:',e.status,'| restarts:',e.restart_time,'| uptime:',Math.round\\(\\(Date.now\\(\\)-e.pm_uptime\\)/1000\\)+'s'\\)}\\)\")",
+      "Bash(node *)",
+      "Bash(./node_modules/.bin/pm2 stop *)",
+      "Bash(curl -s --max-time 12 \"https://api.geckoterminal.com/api/v2/networks/base/tokens/0x64a3ebcb45fc74aa8a8e7a4579f14e85e3a0fba3/pools\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s --max-time 12 'https://api.geckoterminal.com/api/v2/networks/base/pools/__TRACKED_VAR__/ohlcv/hour?aggregate=1&limit=6')",
+      "Bash(npx tsc *)",
+      "Bash(python3 -c \"import json,sys; s=json.load\\(sys.stdin\\)['settings']; [print\\(f'{k}: {s.get\\(k\\)}'\\) for k in ['copyEnabled','skipIfHolding','mirrorSells','autoExitEnabled','takeProfitPct','stopLossPct','dailySpendCapEth','buyCooldownSec','minLiquidityUsd','buyAmountEth','buyAmountUsdc','maxBuyEth','baseQuote','slippageBps']]\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('positions:',len\\(d.get\\('positions',[]\\)\\)\\); print\\('wallets tracked:',len\\(d.get\\('wallets',[]\\)\\), '| enabled:', sum\\(1 for w in d.get\\('wallets',[]\\) if w.get\\('enabled'\\)\\)\\)\")",
+      "Bash(python3 *)"
+    ]
+  }
+}
